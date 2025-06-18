@@ -1,0 +1,75 @@
+//BANNER
+export const snackBar = {
+  En: "SNACK-BAR",
+  Pt: "LANCHONETE",
+};
+export const restaurant = {
+  En: "RESTAURANT",
+  Pt: "RESTAURANTE",
+};
+export const liveSports = {
+  En: "LIVE SPORTS",
+  Pt: "ESPORTES",
+};
+
+//NAVBAR
+export const navBarItems = [
+  "Home",
+  "Menu",
+  "Gallery",
+  "Interior",
+  "Location",
+  "About Us",
+];
+export const navBarItemsPt = [
+  "Início",
+  "Menu",
+  "Galeria",
+  "Interior",
+  "Localização",
+  "Sobre nós",
+];
+
+//FOOTER
+export const openingHours = {
+  En: "Opening Hours:",
+  Pt: "Horário:",
+};
+export const mondayHours = {
+  En: "Monday - Saturday: 9:00 am - 11:00 pm",
+  Pt: "Segunda a sábado: 9H00 - 23H00",
+};
+export const monday = {
+  En: "Monday - Saturday:",
+  Pt: "Segunda a sábado:",
+};
+export const hours = {
+  En: "9:00 am - 11:00 pm",
+  Pt: "9H00 - 23H00",
+};
+export const address = {
+  En: "Address:",
+  Pt: "Endereço:",
+};
+export const copyright = {
+  En: "Copyright",
+  Pt: "Direitos autorais",
+};
+
+//INTERIOR
+export const interiorSlideShow = {
+  En: "Interior Slide Show",
+  Pt: "Apresentação de slides do interior",
+};
+
+//LOCATION
+export const goTo = {
+  En: "Go to ",
+  Pt: "Ir para o ",
+};
+
+//ABOUT US
+export const welcome = {
+  En: "Welcome to",
+  Pt: "Bem-vindo ao",
+};

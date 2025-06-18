@@ -1,0 +1,38 @@
+import { Link } from "react-router-dom";
+import { Icon } from "@chakra-ui/react";
+import { CiCircleChevLeft } from "react-icons/ci";
+import { colorPrimary, colorSecondaryOp50 } from "../../constants/colors";
+import { zIndexChevron } from "@/constants/zIndex";
+
+interface Props {
+  selectedMenu: number;
+}
+
+const ChevronLeft = ({ selectedMenu }: Props) => {
+  const nextImage = selectedMenu <= 1 ? selectedMenu : selectedMenu - 1;
+  const isVisible = selectedMenu > 1;
+
+  const scaleIcon = {
+    base: "scale(2.8, 2.8)",
+  };
+
+  return (
+    isVisible && (
+      <Link to={`/Menu/${nextImage}`}>
+        <Icon
+          as={CiCircleChevLeft}
+          position="absolute"
+          top="-1vw"
+          left="9vw"
+          zIndex={zIndexChevron}
+          color={colorPrimary}
+          bg={colorSecondaryOp50}
+          borderRadius="50%"
+          transform={scaleIcon}
+        />
+      </Link>
+    )
+  );
+};
+
+export default ChevronLeft;

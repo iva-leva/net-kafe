@@ -1,0 +1,311 @@
+.container {
+  width: 100%;
+  height: 62.5vw;
+  aspect-ratio: 100/62.5;
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+.containerMini {
+  width: 100%;
+  height: 62.5vw;
+  aspect-ratio: 100/62.5;
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+.wrapper {
+  width: 80vw;
+  height: 50vw;
+  display: flex;
+  /* overflow: hidden; */
+  animation: slide 45s infinite;
+}
+
+.wrapperMini {
+  width: 100vw;
+  height: 62.5vw;
+  display: flex;
+  /* overflow: hidden; */
+  animation: slideMini 45s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  7% {
+    transform: translateX(0%);
+  }
+  9% {
+    transform: translateX(-100%);
+  }
+  14% {
+    transform: translateX(-100%);
+  }
+  16% {
+    transform: translateX(-200%);
+  }
+  21% {
+    transform: translateX(-200%);
+  }
+  23% {
+    transform: translateX(-300%);
+  }
+  28% {
+    transform: translateX(-300%);
+  }
+  30% {
+    transform: translateX(-400%);
+  }
+  35% {
+    transform: translateX(-400%);
+  }
+  37% {
+    transform: translateX(-500%);
+  }
+  42% {
+    transform: translateX(-500%);
+  }
+  44% {
+    transform: translateX(-600%);
+  }
+  49% {
+    transform: translateX(-600%);
+  }
+  51% {
+    transform: translateX(-700%);
+  }
+  56% {
+    transform: translateX(-700%);
+  }
+  58% {
+    transform: translateX(-800%);
+  }
+  63% {
+    transform: translateX(-800%);
+  }
+  65% {
+    transform: translateX(-900%);
+  }
+  70% {
+    transform: translateX(-900%);
+  }
+  72% {
+    transform: translateX(-1000%);
+  }
+  77% {
+    transform: translateX(-1000%);
+  }
+  79% {
+    transform: translateX(-1100%);
+  }
+  84% {
+    transform: translateX(-1100%);
+  }
+  86% {
+    transform: translateX(-1200%);
+  }
+  91% {
+    transform: translateX(-1200%);
+  }
+  93% {
+    transform: translateX(-1300%);
+  }
+  98% {
+    transform: translateX(-1300%);
+  }
+  100% {
+    transform: translateX(-1400%);
+  }
+}
+
+@keyframes slideMini {
+  0% {
+    transform: translateX(0%);
+  }
+  7% {
+    transform: translateX(0%);
+  }
+  9% {
+    transform: translateX(-100%);
+  }
+  14% {
+    transform: translateX(-100%);
+  }
+  16% {
+    transform: translateX(-200%);
+  }
+  21% {
+    transform: translateX(-200%);
+  }
+  23% {
+    transform: translateX(-300%);
+  }
+  28% {
+    transform: translateX(-300%);
+  }
+  30% {
+    transform: translateX(-400%);
+  }
+  35% {
+    transform: translateX(-400%);
+  }
+  37% {
+    transform: translateX(-500%);
+  }
+  42% {
+    transform: translateX(-500%);
+  }
+  44% {
+    transform: translateX(-600%);
+  }
+  49% {
+    transform: translateX(-600%);
+  }
+  51% {
+    transform: translateX(-700%);
+  }
+  56% {
+    transform: translateX(-700%);
+  }
+  58% {
+    transform: translateX(-800%);
+  }
+  63% {
+    transform: translateX(-800%);
+  }
+  65% {
+    transform: translateX(-900%);
+  }
+  70% {
+    transform: translateX(-900%);
+  }
+  72% {
+    transform: translateX(-1000%);
+  }
+  77% {
+    transform: translateX(-1000%);
+  }
+  79% {
+    transform: translateX(-1100%);
+  }
+  84% {
+    transform: translateX(-1100%);
+  }
+  86% {
+    transform: translateX(-1200%);
+  }
+  91% {
+    transform: translateX(-1200%);
+  }
+  93% {
+    transform: translateX(-1300%);
+  }
+  98% {
+    transform: translateX(-1300%);
+  }
+  100% {
+    transform: translateX(-1400%);
+  }
+}
+
+.aos {
+  position: relative;
+  width: 80vw;
+  height: 50vw;
+  aspect-ratio: 1/62.5;
+}
+
+.aosMini {
+  position: relative;
+  width: 100vw;
+  height: 62.5vw;
+  aspect-ratio: 100/62.5;
+}
+
+.ribbon {
+  position: absolute;
+  width: 80vw;
+  z-index: 1000;
+}
+
+.ribbonMini {
+  position: absolute;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.textOnRibbon {
+  padding: 2vw;
+  font-style: italic;
+  font-weight: semibold;
+}
+
+.blurImage {
+  position: absolute;
+  left: -0.5vw;
+  width: 80vw;
+  height: 50vw;
+  display: block;
+  object-fit: cover;
+  inset: 0;
+  filter: blur(12px);
+  transform: scale(1, 1);
+  z-index: 0;
+}
+
+.blurImageMini {
+  position: absolute;
+  /* left: -0.5vw; */
+  width: 100vw;
+  height: 62.5vw;
+  display: block;
+  object-fit: cover;
+  inset: 0;
+  filter: blur(6px);
+  transform: scale(1, 1);
+  z-index: 0;
+}
+
+.sharpImage {
+  position: relative;
+  width: 74.4vw;
+  height: 46.5vw;
+  left: -0.5vw;
+  display: block;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.sharpImageMini {
+  position: relative;
+  width: 93vw;
+  height: 58.125vw;
+  /* left: -0.5vw; */
+  display: block;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.slideImage {
+  position: relative;
+  width: 80vw;
+  height: 50vw;
+  left: -0.5vw;
+  display: block;
+  object-fit: cover;
+  transform: scale(0.93, 0.93);
+  z-index: 1;
+}
+
+.slideImageMini {
+  position: relative;
+  width: 100vw;
+  height: 62.5vw;
+  /* left: -0.5vw; */
+  display: block;
+  object-fit: cover;
+  transform: scale(0.93, 0.93);
+  z-index: 1;
+}
