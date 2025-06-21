@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import LangContext from "@/contexts/langContext";
 import { Flex, Text, Image } from "@chakra-ui/react";
-import logo from "../../assets/img/Logo/logoLightRed.png";
+import logo from "../../assets/img/logo/logoLightRed.png";
 import { colorPrimary, colorSecondaryOp70 } from "@/constants/colors";
 import { zIndexRibbonAboutUs } from "@/constants/zIndex";
 import { fontNice } from "@/constants/fonts";

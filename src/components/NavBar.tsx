@@ -8,7 +8,7 @@ import {
   Image,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import logo from "../assets/img/Logo/logoLightRed.png";
+import logo from "../assets/img/logo/logoLightRed.png";
 import {
   colorButton,
   colorButtonActive,
