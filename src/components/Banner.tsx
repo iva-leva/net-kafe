@@ -8,7 +8,7 @@ import {
   useBreakpointValue,
   Center,
 } from "@chakra-ui/react";
-import logo from "../assets/img/Logo/logoWhite.png";
+import logo from "../assets/img/logo/logoWhite.png";
 import TripAdvisor from "./banner/TripAdvisor";
 import Facebook from "./banner/Facebook";
 import WhatsApp from "./banner/WhatsApp";
