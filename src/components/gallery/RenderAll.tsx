@@ -37,8 +37,6 @@ const RenderAll = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
-  const isMiniScreen = useBreakpointValue({ base: true, sm: false });
-
   return (
     <Box px={px}>
       <HStack
@@ -51,8 +49,7 @@ const RenderAll = () => {
           <VStack key={indexStack} width={widthVStack}>
             {pictures
               .filter(
-                (picture, indexPicture) =>
-                  indexPicture % stacks.length === stack
+                (_, indexPicture) => indexPicture % stacks.length === stack
               )
               .map((picture, indexPicture) => (
                 <Link

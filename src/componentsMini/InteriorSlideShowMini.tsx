@@ -45,7 +45,7 @@ const InteriorSlideShowMini = ({ handleClickNav }: Props) => {
             </Box>
 
             {sliderPictures
-              .filter((pictures, index) => index !== 0 && index <= 13)
+              .filter((_, index) => index !== 0 && index <= 13)
               .map((picture, index) => (
                 <Box position="relative" aspectRatio="100/62.5" key={index}>
                   <Image

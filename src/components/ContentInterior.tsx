@@ -37,6 +37,8 @@ const ContentInterior = ({ handleClickNav, setFooter100 }: Props) => {
   const selectedImage = renderImage ? parseInt(params.id!) : -1;
 
   if (params.id && !renderImage) return <Navigate to="/Interior" replace />;
+  if (renderImage && `${selectedImage}` !== params.id)
+    return <Navigate to={`/Interior/${selectedImage}`} replace />;
 
   const widthInterior = renderImage ? "100%" : "80%";
   renderImage ? setFooter100(true) : setFooter100(false);

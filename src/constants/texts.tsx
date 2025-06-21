@@ -1,7 +1,7 @@
 //BANNER
 export const snackBar = {
   En: "SNACK-BAR",
-  Pt: "LANCHONETE",
+  Pt: "SNACK-BAR",
 };
 export const restaurant = {
   En: "RESTAURANT",
@@ -9,7 +9,7 @@ export const restaurant = {
 };
 export const liveSports = {
   En: "LIVE SPORTS",
-  Pt: "ESPORTES",
+  Pt: "SPORTS BAR",
 };
 
 //NAVBAR
@@ -36,12 +36,12 @@ export const openingHours = {
   Pt: "Horário:",
 };
 export const mondayHours = {
-  En: "Monday - Saturday: 9:00 am - 11:00 pm",
-  Pt: "Segunda a sábado: 9H00 - 23H00",
+  En: "Tuesday - Sunday: 9:00 am - 11:00 pm",
+  Pt: "Terça a Domingo: 9H00 - 23H00",
 };
 export const monday = {
-  En: "Monday - Saturday:",
-  Pt: "Segunda a sábado:",
+  En: "Tuesday - Sunday:",
+  Pt: "Terça a Domingo:",
 };
 export const hours = {
   En: "9:00 am - 11:00 pm",

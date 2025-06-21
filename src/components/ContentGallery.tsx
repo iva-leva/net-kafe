@@ -30,6 +30,8 @@ const ContentGallery = ({ handleClickNav, setFooter100 }: Props) => {
   const selectedImage = renderImage ? parseInt(params.id!) : -1;
 
   if (params.id && !renderImage) return <Navigate to="/Gallery" replace />;
+  if (renderImage && `${selectedImage}` !== params.id)
+    return <Navigate to={`/Gallery/${selectedImage}`} replace />;
 
   const widthGallery = renderImage ? "100%" : "80%";
   renderImage ? setFooter100(true) : setFooter100(false);

@@ -53,7 +53,7 @@ const ContentHome = ({ handleClickNav }: Props) => {
                 </Box>
 
                 {sliderPictures
-                  .filter((pictures, index) => index !== 0 && index <= 13)
+                  .filter((_, index) => index !== 0 && index <= 13)
                   .map((picture, index) => (
                     <Box
                       position="relative"

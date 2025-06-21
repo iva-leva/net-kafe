@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom";
 import { Icon } from "@chakra-ui/react";
 import { CiCircleChevRight } from "react-icons/ci";
-import {
-  colorIconHover,
-  colorPrimary,
-  colorSecondaryOp50,
-} from "../../constants/colors";
+import { colorPrimary, colorSecondaryOp50 } from "../../constants/colors";
 import { zIndexChevron } from "@/constants/zIndex";
 
 interface Props {

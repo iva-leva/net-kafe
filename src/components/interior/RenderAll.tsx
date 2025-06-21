@@ -51,8 +51,7 @@ const RenderAll = () => {
           <VStack key={indexStack} width={widthVStack}>
             {pictures
               .filter(
-                (picture, indexPicture) =>
-                  indexPicture % stacks.length === stack
+                (_, indexPicture) => indexPicture % stacks.length === stack
               )
               .map((picture, indexPicture) => (
                 <Link

@@ -1,7 +1,8 @@
-import { Box, Text, Heading, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Heading, useBreakpointValue } from "@chakra-ui/react";
 import { colorPrimary, colorSecondary } from "../../constants/colors";
 import OrangeOverlayBox from "../OrangeOverlayBox";
 import { fontNice, fontNormal } from "@/constants/fonts";
+import TextPt from "./TextPt";
 
 const TextLocationPt = () => {
   const fontSizeHeading = useBreakpointValue({
@@ -42,22 +43,15 @@ const TextLocationPt = () => {
       >
         Descubra o Net@Kafé
       </Heading>
-      <Text
+      <Box
         p="3vw"
         pt={0}
         fontSize={fontSize}
         fontFamily={fontNormal}
         textAlign="justify"
       >
-        Localizado no primeiro andar do complexo comercial Bella Vista, no
-        centro de Albufeira, o nosso <b>restaurante e bar desportivo</b> oferece
-        belas vistas a partir do terraço. Seja para o{" "}
-        <b>pequeno-almoço, almoço, café ou jantar</b>, desfrute da{" "}
-        <b>cerveja mais gelada</b>, <b>pizzas deliciosas</b> e{" "}
-        <b>esportes ao vivo</b>
-        num ambiente acolhedor. O local perfeito para uma ótima refeição,
-        bebidas e assistir a todos os grandes jogos!
-      </Text>
+        <TextPt />
+      </Box>
     </Box>
   );
 };

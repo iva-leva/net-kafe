@@ -4,9 +4,7 @@ import { CiCircleChevRight } from "react-icons/ci";
 import {
   colorIconHover,
   colorPrimary,
-  colorPrimaryOp50,
   colorSecondaryOp50,
-  colorTerciary,
 } from "../../constants/colors";
 import { zIndexChevron } from "@/constants/zIndex";
 

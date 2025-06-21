@@ -52,7 +52,7 @@ const InteriorSlideShow = ({ handleClickNav }: Props) => {
                 </Box>
 
                 {sliderPictures
-                  .filter((pictures, index) => index !== 0)
+                  .filter((_, index) => index !== 0)
                   .map((picture, index) => (
                     <Box
                       position="relative"

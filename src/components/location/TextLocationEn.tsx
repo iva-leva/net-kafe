@@ -1,7 +1,8 @@
-import { Box, Text, Heading, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Heading, useBreakpointValue } from "@chakra-ui/react";
 import { colorPrimary, colorSecondary } from "../../constants/colors";
 import OrangeOverlayBox from "../OrangeOverlayBox";
 import { fontNice, fontNormal } from "@/constants/fonts";
+import TextEn from "./TextEn";
 
 const TextLocationEn = () => {
   const fontSizeHeading = useBreakpointValue({
@@ -42,21 +43,15 @@ const TextLocationEn = () => {
       >
         Discover the Net@Kafé
       </Heading>
-      <Text
+      <Box
         p="3vw"
         pt={0}
         fontSize={fontSize}
         fontFamily={fontNormal}
         textAlign="justify"
       >
-        Located on the first floor of Bella Vista shopping complex, in the
-        center of Albufeira, our <b>restaurant and sports bar</b> offers
-        beautiful views from the terrace. Whether you're here for{" "}
-        <b>breakfast, lunch, coffee, or dinner</b>, enjoy the{" "}
-        <b>coldest beer</b>, <b>delicious pizzas</b>, and <b>live sports</b> in
-        a friendly atmosphere. Perfect spot for a great meal, drinks, and
-        catching every big game!
-      </Text>
+        <TextEn />
+      </Box>
     </Box>
   );
 };
