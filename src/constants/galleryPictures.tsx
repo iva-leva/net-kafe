@@ -19,7 +19,7 @@ import food18 from "../assets/img/gallery/i18.jpg";
 import food19 from "../assets/img/gallery/i19.jpg";
 import food20 from "../assets/img/gallery/i20.jpg";
 
-import foodW from "../assets/img/gallery/AG1E.jpg";
+// import foodW from "../assets/img/gallery/AG1E.jpg";
 
 export const pictures = [
   food1,
