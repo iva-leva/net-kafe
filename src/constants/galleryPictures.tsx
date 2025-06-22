@@ -19,14 +19,13 @@ import food18 from "../assets/img/gallery/i18.jpg";
 import food19 from "../assets/img/gallery/i19.jpg";
 import food20 from "../assets/img/gallery/i20.jpg";
 
-// import foodW from "../assets/img/gallery/AG1E.jpg";
+import foodW from "../assets/img/gallery/AG1E.jpg";
 
 export const pictures = [
   food1,
   food2,
   food3,
   food4,
-  // foodW,
   food5,
   food6,
   food7,
@@ -37,10 +36,11 @@ export const pictures = [
   food12,
   food13,
   food14,
-  food15,
+  food19,
   food16,
   food17,
   food18,
-  food19,
+  food15,
   food20,
+  foodW,
 ];
