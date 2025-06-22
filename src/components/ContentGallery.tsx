@@ -3,6 +3,8 @@ import { Box, Center, HStack } from "@chakra-ui/react";
 import RenderAll from "./gallery/RenderAll";
 import RenderImage from "./gallery/RenderImage";
 import { pictures } from "../constants/galleryPictures";
+
+// import { pictures } from "../constants/galleryPictures360px";
 import { colorSecondary } from "../constants/colors";
 import { zIndexContentGallery } from "@/constants/zIndex";
 import { scrollToTop } from "./footer/ScrollUp";

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { HStack, VStack, Box, useBreakpointValue } from "@chakra-ui/react";
 import ImageDynamicShadow from "../ImageDynamicShadow";
-import { interiorPictures as pictures } from "../ContentInterior";
+// import { interiorPictures as pictures } from "../ContentInterior";
+import { pictures } from "@/constants/interiorPictures";
 
 const RenderAll = () => {
   let stacks: number[] | undefined = useBreakpointValue({
