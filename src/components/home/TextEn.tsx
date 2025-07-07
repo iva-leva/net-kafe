@@ -23,7 +23,7 @@ const TextEn = () => {
         snacks in a warm and welcoming atmosphere.{" "}
       </Text>
       <Text>
-        Open daily except Sunday for{" "}
+        Open daily except Monday for{" "}
         <b>breakfast, brunch, lunch, dinner, and evening drinks</b> – the
         perfect place to enjoy great food, good vibes, and every big match!
       </Text>
