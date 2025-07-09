@@ -1,0 +1,18 @@
+export const sliderMessagesEn = [
+  "Welcome to the Net@Kafé!",
+  "Enjoy our mouth-watering pizzas...",
+  "Fresh salads...",
+  "Fantastic coffee with waffles and desserts...",
+  "Cooling smoothies and milkshakes with ice cream...",
+  "Enjoy the sports atmosphere...",
+  "that draws you right into the match...",
+  "Enjoy the coldest beer in the town...",
+  "Golden french fries...",
+  "Wonderful wraps and burgers...",
+  "Sweet crepes and desserts...",
+  "Delicious snacks...",
+  "Famous beers...",
+  "Great Portuguese local wines...",
+  "Refreshing drinks and juices...",
+  "Welcome to the Net@Kafé!",
+];

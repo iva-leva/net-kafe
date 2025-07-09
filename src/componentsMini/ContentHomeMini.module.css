@@ -27,7 +27,7 @@
   height: 62.5vw;
   display: flex;
   /* overflow: hidden; */
-  animation: slideMini 45s infinite;
+  animation: slideMini 48s infinite;
 }
 
 @keyframes slide {
@@ -124,89 +124,95 @@
   0% {
     transform: translateX(0%);
   }
-  7% {
+  5% {
     transform: translateX(0%);
   }
-  9% {
+  7% {
+    transform: translateX(-100%);
+  }
+  12% {
     transform: translateX(-100%);
   }
   14% {
-    transform: translateX(-100%);
-  }
-  16% {
     transform: translateX(-200%);
   }
-  21% {
+  18% {
     transform: translateX(-200%);
   }
-  23% {
+  20% {
     transform: translateX(-300%);
   }
-  28% {
+  25% {
     transform: translateX(-300%);
   }
-  30% {
+  27% {
     transform: translateX(-400%);
   }
-  35% {
+  32% {
     transform: translateX(-400%);
   }
-  37% {
+  34% {
     transform: translateX(-500%);
   }
-  42% {
+  38% {
     transform: translateX(-500%);
   }
-  44% {
+  40% {
     transform: translateX(-600%);
   }
-  49% {
+  45% {
     transform: translateX(-600%);
   }
-  51% {
+  47% {
     transform: translateX(-700%);
   }
-  56% {
+  52% {
     transform: translateX(-700%);
+  }
+  54% {
+    transform: translateX(-800%);
   }
   58% {
     transform: translateX(-800%);
   }
-  63% {
-    transform: translateX(-800%);
+  60% {
+    transform: translateX(-900%);
   }
   65% {
     transform: translateX(-900%);
   }
-  70% {
-    transform: translateX(-900%);
+  67% {
+    transform: translateX(-1000%);
   }
   72% {
     transform: translateX(-1000%);
   }
-  77% {
-    transform: translateX(-1000%);
-  }
-  79% {
+  74% {
     transform: translateX(-1100%);
   }
-  84% {
+  78% {
     transform: translateX(-1100%);
   }
-  86% {
+  80% {
     transform: translateX(-1200%);
   }
-  91% {
+  85% {
     transform: translateX(-1200%);
   }
-  93% {
+  87% {
     transform: translateX(-1300%);
+  }
+  92% {
+    transform: translateX(-1300%);
+  }
+  94% {
+    transform: translateX(-1400%);
   }
   98% {
-    transform: translateX(-1300%);
+    transform: translateX(-1400%);
   }
   100% {
-    transform: translateX(-1400%);
+    transform: translateX(-1500%);
   }
 }
 

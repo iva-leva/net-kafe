@@ -5,7 +5,7 @@ import { Box, Center, Flex, Image, Text, VStack } from "@chakra-ui/react";
 import styles from "../componentsMini/ContentHomeMini.module.css";
 
 import { sliderPictures } from "../constants/homeSliderPicturesMini";
-import { sliderMessages } from "../constants/homeSliderMessagesMini";
+import { sliderMessagesEn } from "../constants/homeSliderMessagesMiniEn";
 import { sliderMessagesPt } from "../constants/homeSliderMessagesMiniPt";
 
 import RibbonIniMini from "./home/RibbonIniMini";
@@ -52,7 +52,7 @@ const ContentHomeMini = ({ handleClickNav }: Props) => {
             </Box>
 
             {sliderPictures
-              .filter((_, index) => index !== 0 && index <= 13)
+              .filter((_, index) => index !== 0 && index <= 14)
               .map((picture, index) => (
                 <Box position="relative" aspectRatio="100/62.5" key={index}>
                   <Flex
@@ -73,7 +73,7 @@ const ContentHomeMini = ({ handleClickNav }: Props) => {
                   >
                     <Text>
                       {lang === "En"
-                        ? sliderMessages[index + 1]
+                        ? sliderMessagesEn[index + 1]
                         : sliderMessagesPt[index + 1]}
                     </Text>
 

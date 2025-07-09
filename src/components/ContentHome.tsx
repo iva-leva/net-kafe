@@ -5,7 +5,7 @@ import { Box, Center, Flex, HStack, Image, Text } from "@chakra-ui/react";
 import styles from "./ContentHome.module.css";
 
 import { sliderPictures } from "../constants/homeSliderPictures";
-import { sliderMessages } from "../constants/homeSliderMessages";
+import { sliderMessagesEn } from "../constants/homeSliderMessagesEn";
 import { sliderMessagesPt } from "@/constants/homeSliderMessagesPt";
 
 import RibbonIni from "./home/RibbonIni";
@@ -53,7 +53,7 @@ const ContentHome = ({ handleClickNav }: Props) => {
                 </Box>
 
                 {sliderPictures
-                  .filter((_, index) => index !== 0 && index <= 13)
+                  .filter((_, index) => index !== 0 && index <= 14)
                   .map((picture, index) => (
                     <Box
                       position="relative"
@@ -78,7 +78,7 @@ const ContentHome = ({ handleClickNav }: Props) => {
                       >
                         <Text>
                           {lang === "En"
-                            ? sliderMessages[index + 1]
+                            ? sliderMessagesEn[index + 1]
                             : sliderMessagesPt[index + 1]}
                         </Text>
                       </Flex>

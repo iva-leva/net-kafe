@@ -1,35 +1,34 @@
 import netKafe from "../assets/img/homeSliderPicturesMini/NetKafe.jpg";
 import pizza from "../assets/img/homeSliderPicturesMini/pizza.jpg";
-import lasagne from "../assets/img/homeSliderPicturesMini/lasagne.jpg";
 import salad from "../assets/img/homeSliderPicturesMini/salad.jpg";
-
-import sweets from "../assets/img/homeSliderPicturesMini/sweets.jpg";
-import blueberry from "../assets/img/homeSliderPicturesMini/blueberry.jpg";
-
+import waffle from "../assets/img/homeSliderPicturesMini/waffle.jpg";
+import shakes from "../assets/img/homeSliderPicturesMini/shakes.jpg";
 import football from "../assets/img/homeSliderPicturesMini/football.jpg";
+import aiFootball from "../assets/img/homeSliderPicturesMini/aiFootball.jpg";
 import beer from "../assets/img/homeSliderPicturesMini/beer.jpg";
 import frenchFries from "../assets/img/homeSliderPicturesMini/frenchFries.jpg";
-import juice from "../assets/img/homeSliderPicturesMini/juice.jpg";
-
-import aiFood from "../assets/img/homeSliderPicturesMini/aiFood.jpg";
-import aiIceCream from "../assets/img/homeSliderPicturesMini/aiIceCream.jpg";
-import aiFootball from "../assets/img/homeSliderPicturesMini/aiFootball.jpg";
-import aiSnacks from "../assets/img/homeSliderPicturesMini/aiSnacks.jpg";
+import wrap from "../assets/img/homeSliderPicturesMini/wrap.jpg";
+import crepe from "../assets/img/homeSliderPicturesMini/crepe.jpg";
+import cheese from "../assets/img/homeSliderPicturesMini/cheese.jpg";
+import beers from "../assets/img/homeSliderPicturesMini/beers.jpg";
+import wines from "../assets/img/homeSliderPicturesMini/wines.jpg";
+import beverages from "../assets/img/homeSliderPicturesMini/beverages.jpg";
 
 export const sliderPictures = [
   netKafe,
-  aiFood,
   pizza,
-  lasagne,
   salad,
-  aiIceCream,
+  waffle,
+  shakes,
   football,
   aiFootball,
   beer,
   frenchFries,
-  aiSnacks,
-  sweets,
-  blueberry,
-  juice,
+  wrap,
+  crepe,
+  cheese,
+  beers,
+  wines,
+  beverages,
   netKafe,
 ];
