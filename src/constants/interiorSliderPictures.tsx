@@ -1,6 +1,7 @@
 import interior1 from "../assets/img/interior/interior1.jpg";
 import interior2 from "../assets/img/interior/interior2.jpg";
 import interior3 from "../assets/img/interior/interior3.jpg";
+import interior4 from "../assets/img/interior/interior4.jpg";
 import interior5 from "../assets/img/interior/interior5.jpg";
 import interior6 from "../assets/img/interior/interior6.jpg";
 import interior7 from "../assets/img/interior/interior7.jpg";
@@ -17,6 +18,7 @@ export const sliderPictures = [
   interior1,
   interior2,
   interior3,
+  interior4,
   interior5,
   interior6,
   interior7,
