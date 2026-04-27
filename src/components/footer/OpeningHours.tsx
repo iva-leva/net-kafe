@@ -8,7 +8,12 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { MdDeck } from "react-icons/md";
-import { hours, monday, mondayHours, openingHours } from "@/constants/texts";
+import {
+  hours,
+  openDays,
+  openDaysHours,
+  openingHours,
+} from "@/constants/texts";
 
 const OpeningHours = () => {
   const { lang } = useContext(LangContext);
@@ -30,7 +35,7 @@ const OpeningHours = () => {
         <HStack>
           <Icon as={MdDeck} transform={"scale(1.55 , 1.55)"} />
           <Text px="0.4vw">{openingHours[lang]}</Text>
-          <Text>{mondayHours[lang]}</Text>
+          <Text>{openDaysHours[lang]}</Text>
         </HStack>
       )}
 
@@ -40,7 +45,7 @@ const OpeningHours = () => {
             <Icon as={MdDeck} transform={"scale(1.55 , 1.55)"} />
             <Text px="0.4vw">{openingHours[lang]}</Text>{" "}
           </HStack>
-          <Text>{mondayHours[lang]}</Text>
+          <Text>{openDaysHours[lang]}</Text>
         </>
       )}
 
@@ -52,7 +57,7 @@ const OpeningHours = () => {
               {openingHours[lang]}
             </Text>
           </HStack>
-          <Text>{monday[lang]}</Text>
+          <Text>{openDays[lang]}</Text>
           <Text>{hours[lang]}</Text>
         </VStack>
       )}

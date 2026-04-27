@@ -1,4 +1,5 @@
 import { Text } from "@chakra-ui/react";
+import { closeDay } from "@/constants/texts";
 
 const TextEn = () => {
   return (
@@ -23,7 +24,7 @@ const TextEn = () => {
         snacks in a warm and welcoming atmosphere.{" "}
       </Text>
       <Text>
-        Open daily except Monday for{" "}
+        Open daily except {closeDay.En} for{" "}
         <b>breakfast, brunch, lunch, dinner, and evening drinks</b> – the
         perfect place to enjoy great food, good vibes, and every big match!
       </Text>

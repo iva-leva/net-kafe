@@ -1,4 +1,5 @@
 import { Text } from "@chakra-ui/react";
+import { closeDay } from "@/constants/texts";
 
 const TextPt = () => {
   return (
@@ -25,7 +26,7 @@ const TextPt = () => {
         acolhedor.{" "}
       </Text>
       <Text>
-        Aberto diariamente, exceto segunda feira para{" "}
+        Aberto diariamente, exceto {closeDay.Pt}, para{" "}
         <b>pequeno almoço, brunch, almoço, jantar e bebidas à noite</b> – o
         lugar perfeito para desfrutar de ótima comida, boas vibrações e de todas
         as grandes partidas!

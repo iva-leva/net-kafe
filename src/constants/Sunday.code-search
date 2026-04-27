@@ -1,0 +1,13 @@
+# Query: Sunday
+# ContextLines: 1
+
+2 results - 1 file
+
+src\constants\texts.tsx:
+  38  export const mondayHours = {
+  39:   En: "Monday - Saturday: 9:00 am - 11:00 pm",
+  40    Pt: "Terça a Domingo: 9H00 - 23H00",
+
+  42  export const monday = {
+  43:   En: "Monday - Saturday:",
+  44    Pt: "Terça a Domingo:",

@@ -27,7 +27,7 @@ const Copyright = () => {
       bgColor={colorPrimary}
     >
       <Text h={"5vw"} padding="0.8rem">
-        {copyright[lang]} &copy; 2025 Net@Kafé
+        {copyright[lang]} &copy; {new Date().getFullYear()} Net@Kafé
       </Text>
       <Box color={colorPrimary}>
         <Text>_</Text>
