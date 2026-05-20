@@ -1,4 +1,4 @@
-import menu1 from "../assets/img/menu/foodPt.webp";
+import menu1 from "../assets/img/menu/foodPt.jpg";
 import menu2 from "../assets/img/menu/drinks1.jpg";
 import menu3 from "../assets/img/menu/drinks2.jpg";
 import menu4 from "../assets/img/menu/drinks3.jpg";
