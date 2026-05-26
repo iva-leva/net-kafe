@@ -91,7 +91,10 @@ const Banner = () => {
                 transition="all 0.3s ease-in-out"
                 boxShadow={lang === "En" ? flagShadowActive : flagShadow}
                 _hover={{ cursor: "pointer", transform: "scale(1.15, 1.15)" }}
-                onClick={() => setLang("En")}
+                onClick={() => {
+                  setLang("En");
+                  localStorage.setItem("language", "En");
+                }}
               />
               <Image
                 src={pt}
@@ -99,7 +102,10 @@ const Banner = () => {
                 transition="all 0.3s ease-in-out"
                 boxShadow={lang === "En" ? flagShadow : flagShadowActive}
                 _hover={{ cursor: "pointer", transform: "scale(1.15, 1.15)" }}
-                onClick={() => setLang("Pt")}
+                onClick={() => {
+                  setLang("Pt");
+                  localStorage.setItem("language", "Pt");
+                }}
               />
             </HStack>
           )}

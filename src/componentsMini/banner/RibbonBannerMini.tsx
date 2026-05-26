@@ -35,7 +35,10 @@ const RibbonBannerMini = () => {
         transition="all 0.3s ease-in-out"
         boxShadow={lang === "En" ? flagShadowActive : flagShadow}
         _hover={{ cursor: "pointer", transform: "scale(1.15, 1.15)" }}
-        onClick={() => setLang("En")}
+        onClick={() => {
+          setLang("En");
+          localStorage.setItem("language", "En");
+        }}
       />
       <Image
         zIndex={zIndexFlag}
@@ -44,7 +47,10 @@ const RibbonBannerMini = () => {
         transition="all 0.3s ease-in-out"
         boxShadow={lang === "Pt" ? flagShadowActive : flagShadow}
         _hover={{ cursor: "pointer", transform: "scale(1.15, 1.15)" }}
-        onClick={() => setLang("Pt")}
+        onClick={() => {
+          setLang("Pt");
+          localStorage.setItem("language", "Pt");
+        }}
       />
     </HStack>
   );
