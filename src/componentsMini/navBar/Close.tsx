@@ -1,4 +1,4 @@
-import { Icon, useBreakpointValue } from "@chakra-ui/react";
+import { Icon } from "@chakra-ui/react";
 import { MdClose } from "react-icons/md";
 import { colorIcon, colorIconHover } from "../../constants/colors";
 
@@ -7,24 +7,9 @@ type Props = {
 };
 
 const Close = ({ color }: Props) => {
-  const mx = useBreakpointValue({
-    base: "2vw",
-    sm: "1.4vw",
-    md: "0.3vw",
-    lg: "0.5vw",
-  });
-
-  const transform = useBreakpointValue({
-    base: "scale(2.5, 2.5)",
-    md: "scale(1.5 , 1.5)",
-    lg: "scale(1.7 , 1.7)",
-  });
-
-  const transformHover = useBreakpointValue({
-    base: "scale(2.1 , 2.1)",
-    md: "scale(1.6 , 1.6)",
-    lg: "scale(1.9 , 1.9)",
-  });
+  const mx = "2vw";
+  const transform = "scale(2.5, 2.5)";
+  const transformHover = "scale(2.9 , 2.9)";
 
   return (
     <Icon

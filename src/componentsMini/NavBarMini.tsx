@@ -61,7 +61,7 @@ const NavBarMini = ({
 
   return (
     <>
-      <Box
+      <Center
         h="7vw"
         w="7vw"
         position={"fixed"}
@@ -81,7 +81,7 @@ const NavBarMini = ({
         }}
       >
         {openNavBar ? <Close /> : <Vegeburger />}
-      </Box>
+      </Center>
 
       {openNavBar && (
         <VStack
