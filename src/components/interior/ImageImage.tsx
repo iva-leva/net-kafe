@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import ImageDynamicShadow from "../ImageDynamicShadow";
 // import { interiorPictures as pictures } from "../ContentInterior";
-import { pictures } from "@/constants/interiorPictures";
+import { pictures } from "@/constants/interiorPicturesBig";
 
 import { zIndexGalleryImageImage } from "@/constants/zIndex";
 
