@@ -15,7 +15,7 @@ const Vegeburger = ({ color }: Props) => {
     <Icon
       as={MdMenu}
       mx={mx}
-      w="12px"
+      w="10px"
       transform={transform}
       transition="all 0.3s ease-in-out"
       color={color ? color : colorIcon}

@@ -1,3 +1,4 @@
+import { colorIcon } from "@/constants/colors";
 import { Center, Text } from "@chakra-ui/react";
 
 interface Props {
@@ -11,7 +12,7 @@ const Counter = ({ selectedImage, length }: Props) => {
   const mRight = { base: "2vw", sm: "-0.7vw", md: "-0.6vw", lg: "-0.5vw" };
   return (
     <Center ml={mLeft} mr={mRight} fontSize={fontSize}>
-      <Text display="inline">
+      <Text display="inline" color={colorIcon}>
         {selectedImage}/{length}
       </Text>
     </Center>

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Center, Icon } from "@chakra-ui/react";
 import { CiCircleChevRight } from "react-icons/ci";
-import { colorIconHover } from "../../constants/colors";
+import { colorIcon, colorIconHover } from "../../constants/colors";
 interface Props {
   selectedImage: number;
   length: number;
@@ -32,6 +32,7 @@ const ChevronRight = ({ selectedImage, length }: Props) => {
       >
         <Icon
           as={CiCircleChevRight}
+          color={colorIcon}
           transform={scaleIcon}
           transition="all 0.3s ease-in-out"
           _hover={{

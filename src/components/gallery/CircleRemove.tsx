@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Center } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
 import { CiCircleRemove } from "react-icons/ci";
-import { colorIconHover } from "../../constants/colors";
+import { colorIcon, colorIconHover } from "../../constants/colors";
 
 const CircleRemove = () => {
   const scaleIcon = {
@@ -23,6 +23,7 @@ const CircleRemove = () => {
       <Center>
         <Icon
           as={CiCircleRemove}
+          color={colorIcon}
           transform={scaleIcon}
           transition="all 0.3s ease-in-out"
           _hover={{
