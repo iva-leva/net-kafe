@@ -1,6 +1,6 @@
 import { Center, Icon } from "@chakra-ui/react";
 import { BsZoomOut } from "react-icons/bs";
-import { colorIconHover } from "../../constants/colors";
+import { colorIcon, colorIconHover } from "../../constants/colors";
 
 interface Props {
   handleZoomClick: (num: number) => void;
@@ -31,6 +31,7 @@ const ZoomOut = ({ handleZoomClick, zoomOutEnabled }: Props) => {
     >
       <Icon
         as={BsZoomOut}
+        color={colorIcon}
         transform={scaleIcon}
         transition="all 0.3s ease-in-out"
         _hover={{
