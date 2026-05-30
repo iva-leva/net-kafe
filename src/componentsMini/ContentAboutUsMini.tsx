@@ -19,13 +19,13 @@ const ContentAboutUsMini = ({ handleClickNav }: Props) => {
   const { lang } = useContext(LangContext);
   return (
     <VStack w="100%" pt="57vw" bg={colorSecondary} overflowX={"clip"}>
-      <PictureAIMini />
+      <PictureFootbal />
       {lang === "En" ? (
         <TextSportsHangoutMiniEn />
       ) : (
         <TextSportsHangoutMiniPt />
       )}
-      <PictureFootbal />
+      <PictureAIMini />
     </VStack>
   );
 };

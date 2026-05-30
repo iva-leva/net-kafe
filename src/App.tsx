@@ -15,7 +15,7 @@ function App() {
     if (language as SelectedLanguage) setLang(language as SelectedLanguage);
   }, []);
 
-  const isMobile = useMediaQuery("(max-width: 767px)");
+  const isMobile = useMediaQuery("(max-width: 540px)");
 
   // const isMiniScreen = useBreakpointValue({ base: true, sm: false });
   return (

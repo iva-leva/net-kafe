@@ -12,7 +12,8 @@ const RibbonAboutUsMini = () => {
   return (
     <Flex
       position="absolute"
-      top="31vw"
+      // top="31vw"
+      top="22vw"
       right="0"
       w="100vw"
       minHeight="13vw"

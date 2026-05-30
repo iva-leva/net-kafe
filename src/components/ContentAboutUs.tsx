@@ -26,9 +26,9 @@ const ContentAboutUs = ({ handleClickNav }: Props) => {
       overflowX={"clip"}
     >
       <VStack w="80%" overflowX={"clip"}>
-        <PictureAI />
-        {lang === "En" ? <TextSportsHangoutEn /> : <TextSportsHangoutPt />}
         <PictureFootbal />
+        {lang === "En" ? <TextSportsHangoutEn /> : <TextSportsHangoutPt />}
+        <PictureAI />
       </VStack>
     </HStack>
   );

@@ -12,7 +12,8 @@ const RibbonAboutUs = () => {
   return (
     <Flex
       position="absolute"
-      top="21vw"
+      // top="21vw"
+      top="18vw"
       right="0"
       w="80vw"
       minHeight="7vw"

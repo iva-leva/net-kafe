@@ -19,8 +19,8 @@ type Props = {
 
 const IconsTextsMini = ({ position, top, color, bg }: Props) => {
   const fontSize = useBreakpointValue({
-    base: "6vw",
-    sm: "sm",
+    base: "5vw",
+    sm: "4vw",
     md: "md",
     lg: "lg",
     xl: "xl",
