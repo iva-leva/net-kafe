@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { pictures } from "../../constants/galleryPictures";
+import { pictures } from "../../constants/galleryPicturesBig";
 import ImageDynamicShadow from "@/components/ImageDynamicShadow";
 import ChevronLeft from "./ChevronLeft";
 import ChevronRight from "./ChevronRight";

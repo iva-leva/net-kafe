@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import ImageDynamicShadow from "../ImageDynamicShadow";
-import { galleryPictures as pictures } from "../ContentGallery";
-
+// import { galleryPictures as pictures } from "../ContentGallery";
+import { pictures } from "../../constants/galleryPicturesBig";
 import { zIndexGalleryImageImage } from "@/constants/zIndex";
 
 interface Props {
