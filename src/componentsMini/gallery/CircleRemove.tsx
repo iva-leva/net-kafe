@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Icon } from "@chakra-ui/react";
 import { CiCircleRemove } from "react-icons/ci";
-import { colorPrimary, colorSecondaryOp50 } from "../../constants/colors";
+import { colorPrimary, colorSecondaryOp70 } from "../../constants/colors";
 import { zIndexChevron } from "@/constants/zIndex";
 
 const CircleRemove = () => {
@@ -18,7 +18,7 @@ const CircleRemove = () => {
         right="21vw"
         zIndex={zIndexChevron}
         color={colorPrimary}
-        bg={colorSecondaryOp50}
+        bg={colorSecondaryOp70}
         borderRadius="50%"
         transform={scaleIcon}
       />
