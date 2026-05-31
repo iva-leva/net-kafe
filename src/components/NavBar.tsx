@@ -73,7 +73,11 @@ const NavBar = ({ selectedItemNav, handleClickNav }: Props) => {
     >
       <OrangeOverlayBox />
       <Center h="7vw" w="20vw" />
-      <Image src={logo} w="10vw" mt="0.5vw" mb="1vw" />
+      <Center zIndex={zIndexNavBar}>
+        <Link to="Home">
+          <Image src={logo} w="10vw" mt="0.5vw" mb="1vw" />
+        </Link>
+      </Center>
 
       <VStack>
         {navBarItems.map((item, index) => (

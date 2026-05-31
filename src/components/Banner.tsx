@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import LangContext from "@/contexts/langContext";
+import { Link } from "react-router-dom";
+
 import {
   HStack,
   Text,
@@ -40,26 +42,36 @@ const Banner = () => {
       <Box position="fixed" top={0} left={0} boxShadow={"0 0 0.5rem black"}>
         <HStack top="0" left="0" justifyContent="center" bg={colorPrimary}>
           <Center w="100vw" minH="7vw">
-            <Image w="7vw" src={logo} ml="8vw" mr="1vw" />
+            <Link to="Home">
+              <Image w="7vw" src={logo} ml="8vw" mr="1vw" />
+            </Link>
             <HStack
               fontSize="2.9vw"
               fontWeight="bold"
               fontFamily={fontNormal}
               fontStyle="italic"
             >
-              <Text mr="3vw" color="white">
-                Net@Kafé
-              </Text>
+              <Link to="Home">
+                <Text mr="3vw" color="white">
+                  Net@Kafé
+                </Text>
+              </Link>
               <HStack fontSize="1.6vw" fontStyle="normal">
-                <Text mx="0.5vw" color="papayawhip">
-                  {snackBar[lang]}
-                </Text>
-                <Text mx="0.5vw" color="#fff59b">
-                  {restaurant[lang]}
-                </Text>
-                <Text mx="0.5vw" color="lightgreen">
-                  ⚽{liveSports[lang]}
-                </Text>
+                <Link to="Gallery">
+                  <Text mx="0.5vw" color="papayawhip">
+                    {snackBar[lang]}
+                  </Text>
+                </Link>
+                <Link to="Interior">
+                  <Text mx="0.5vw" color="#fff59b">
+                    {restaurant[lang]}
+                  </Text>
+                </Link>
+                <Link to="About Us">
+                  <Text mx="0.5vw" color="lightgreen">
+                    ⚽{liveSports[lang]}
+                  </Text>
+                </Link>
               </HStack>
             </HStack>
           </Center>

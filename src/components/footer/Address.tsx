@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import LangContext from "@/contexts/langContext";
+import { Link } from "react-router-dom";
 import {
   VStack,
   HStack,
@@ -27,7 +28,7 @@ const Address = () => {
   const isMiniScreen = useBreakpointValue({ base: true, sm: false });
 
   return (
-    <>
+    <Link to="Location">
       {isBigScreen && (
         <HStack>
           <Icon as={MdLocationOn} transform={"scale(1.5 , 1.5)"} />
@@ -75,7 +76,7 @@ const Address = () => {
           <Text>8200 - Albufeira, Portugal</Text>
         </VStack>
       )}
-    </>
+    </Link>
   );
 };
 

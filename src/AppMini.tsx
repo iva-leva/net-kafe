@@ -32,7 +32,7 @@ function AppMini() {
         openNavBar={openNavBar}
         handleClickOpenNavBar={handleClickOpenNavBar}
       />
-      <Banner />
+      <Banner handleClickOpenNavBar={handleClickOpenNavBar} />
       {!openNavBar && (
         <Routes>
           <Route

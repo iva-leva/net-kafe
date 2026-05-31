@@ -7,7 +7,6 @@ import WhatsApp from "../../components/banner/WhatsApp";
 import Facebook from "../../components/banner/Facebook";
 import TripAdvisor from "../../components/banner/TripAdvisor";
 import Instagram from "../../components/banner/Instagram";
-// import ScrollUp from "@/components/footer/ScrollUp";
 import ScrollUp from "../../components/footer/ScrollUp";
 
 type Props = {

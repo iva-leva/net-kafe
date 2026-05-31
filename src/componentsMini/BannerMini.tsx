@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import LangContext from "@/contexts/langContext";
+import { Link } from "react-router-dom";
 import { HStack, Text, Image, Box, Center, VStack } from "@chakra-ui/react";
 import RibbonBannerMini from "./banner/RibbonBannerMini";
 import logo from "../assets/img/logo/logoWhite.png";
@@ -10,9 +11,14 @@ import {
 } from "../constants/colors";
 import { zIndexBanner } from "@/constants/zIndex";
 import { liveSports, restaurant, snackBar } from "@/constants/texts";
+import { scrollToTop } from "@/components/footer/ScrollUp";
 import { fontNormal } from "@/constants/fonts";
 
-const BannerMini = () => {
+interface Props {
+  handleClickOpenNavBar: () => void;
+}
+
+const BannerMini = ({ handleClickOpenNavBar }: Props) => {
   const { lang } = useContext(LangContext);
   return (
     <Box position={"relative"} bg={colorSecondary} zIndex={zIndexBanner}>
@@ -30,10 +36,21 @@ const BannerMini = () => {
             color="white"
             justifyContent="left"
           >
-            <VStack ml="7vw">
-              <Image w="25vw" src={logo} />
-            </VStack>
-            <Text>Net@Kafé</Text>
+            <Link to="Home">
+              <VStack ml="7vw">
+                <Image w="25vw" src={logo} />
+              </VStack>
+            </Link>
+            {/* <Link to="Home"> */}
+            <Text
+              onClick={() => {
+                scrollToTop();
+                handleClickOpenNavBar();
+              }}
+            >
+              Net@Kafé
+            </Text>
+            {/* </Link> */}
           </HStack>
         </Center>
 
@@ -45,15 +62,21 @@ const BannerMini = () => {
           fontWeight="bold"
           bg={colorPrimary}
         >
-          <Text mx="2vw" color={colorSecondary}>
-            {snackBar[lang]}
-          </Text>
-          <Text mx="2vw" color={colorTerciary}>
-            {restaurant[lang]}
-          </Text>
-          <Text mx="2vw" color="lightgreen">
-            ⚽{liveSports[lang]}
-          </Text>
+          <Link to="Gallery">
+            <Text mx="2vw" color={colorSecondary}>
+              {snackBar[lang]}
+            </Text>
+          </Link>
+          <Link to="Interior">
+            <Text mx="2vw" color={colorTerciary}>
+              {restaurant[lang]}
+            </Text>
+          </Link>
+          <Link to="About Us">
+            <Text mx="2vw" color="lightgreen">
+              ⚽{liveSports[lang]}
+            </Text>
+          </Link>
         </Center>
       </VStack>
     </Box>
