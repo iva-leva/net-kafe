@@ -11,6 +11,7 @@ import {
 import { MdLocationOn } from "react-icons/md";
 import { address } from "@/constants/texts";
 // import { PiHouseLineFill } from "react-icons/pi";
+import { scrollToTop } from "./ScrollUp";
 
 const Address = () => {
   const { lang } = useContext(LangContext);
@@ -28,7 +29,7 @@ const Address = () => {
   const isMiniScreen = useBreakpointValue({ base: true, sm: false });
 
   return (
-    <Link to="Location">
+    <Link to="Location" onClick={scrollToTop}>
       {isBigScreen && (
         <HStack>
           <Icon as={MdLocationOn} transform={"scale(1.5 , 1.5)"} />
