@@ -80,7 +80,7 @@ const Content = ({ handleClickNav, setFooter100 }: Props) => {
         path="/About Us"
         element={<ContentAboutUs handleClickNav={handleClickNav} />}
       />
-
+      <Route path="/*" element={<Navigate to="/Home" replace />} />
       <Route path="/Home/*" element={<Navigate to="/Home" replace />} />
       <Route path="/Menu/*" element={<Navigate to="/Menu" replace />} />
       <Route path="/Location/*" element={<Navigate to="/Location" replace />} />
