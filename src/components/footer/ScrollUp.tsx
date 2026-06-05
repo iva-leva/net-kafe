@@ -43,7 +43,11 @@ const ScrollUp = ({ footer100 }: Props) => {
         as={BsArrowUpSquare}
         transform={"scale(1.7 , 1.7)"}
         transition="all 0.3s ease-in-out"
-        _hover={{ transform: "scale(1.9)", color: colorIconHover }}
+        _hover={{
+          transform: "scale(1.9)",
+          color: colorIconHover,
+          cursor: "pointer",
+        }}
       />
     </Box>
   );

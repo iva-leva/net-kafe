@@ -33,6 +33,24 @@ const Banner = () => {
     sm: "5vw",
     md: "4vw",
   });
+  // const transformHoverLogo = useBreakpointValue({
+  //   base: "scale(1.03 , 1.03)",
+  // sm: "scale(1.05 , 1.05)",
+  // md: "scale(1.05 , 1.05)",
+  // lg: "scale(1.05 , 1.05)",
+  // });
+  // const transformHoverLogoText = useBreakpointValue({
+  //   base: "scale(1.02 , 1.04)",
+  // sm: "scale(1.05 , 1.05)",
+  // md: "scale(1.05 , 1.05)",
+  // lg: "scale(1.05 , 1.05)",
+  // });
+  const transformHoverText = useBreakpointValue({
+    base: "scale(1.03 , 1.09)",
+    // sm: "scale(1.05 , 1.05)",
+    // md: "scale(1.05 , 1.05)",
+    // lg: "scale(1.05 , 1.05)",
+  });
   const isBigScreen = useBreakpointValue({ base: false, sm: true });
   const flagShadow = "0px 0px 0px 0px rgba(127, 127, 127, 0.5)";
   const flagShadowActive = "0px 0px 5px 2px rgb(255, 206, 127)";
@@ -42,36 +60,76 @@ const Banner = () => {
       <Box position="fixed" top={0} left={0} boxShadow={"0 0 0.5rem black"}>
         <HStack top="0" left="0" justifyContent="center" bg={colorPrimary}>
           <Center w="100vw" minH="7vw">
-            <Link to="Home">
-              <Image w="7vw" src={logo} ml="8vw" mr="1vw" />
-            </Link>
+            <Center
+            // transition="all 300ms ease-in-out"
+            // _hover={{
+            //   transform: transformHoverLogo,
+            //   transformOrigin: "66% 50%",
+            // }}
+            >
+              <Link to="Home">
+                <Image w="7vw" src={logo} ml="8vw" mr="1vw" />
+              </Link>
+            </Center>
             <HStack
               fontSize="2.9vw"
               fontWeight="bold"
               fontFamily={fontNormal}
               fontStyle="italic"
             >
-              <Link to="Home">
-                <Text mr="3vw" color="white">
-                  Net@Kafé
-                </Text>
-              </Link>
+              <Center
+              // transition="all 300ms ease-in-out"
+              // transform="scale(1.0 , 1.0)"
+              // _hover={{
+              //   transform: transformHoverLogoText,
+              // }}
+              >
+                <Link to="Home">
+                  <Text mr="3vw" color="white">
+                    Net@Kafé
+                  </Text>
+                </Link>
+              </Center>
               <HStack fontSize="1.6vw" fontStyle="normal">
-                <Link to="Gallery">
-                  <Text mx="0.5vw" color="papayawhip">
-                    {snackBar[lang]}
-                  </Text>
-                </Link>
-                <Link to="Interior">
-                  <Text mx="0.5vw" color="#fff59b">
-                    {restaurant[lang]}
-                  </Text>
-                </Link>
-                <Link to="About Us">
-                  <Text mx="0.5vw" color="lightgreen">
-                    ⚽{liveSports[lang]}
-                  </Text>
-                </Link>
+                <Center
+                  transition="all 300ms ease-in-out"
+                  _hover={{
+                    transform: transformHoverText,
+                    // cursor: "pointer",
+                  }}
+                >
+                  <Link to="Gallery">
+                    <Text mx="0.5vw" color="papayawhip">
+                      {snackBar[lang]}
+                    </Text>
+                  </Link>
+                </Center>
+                <Center
+                  transition="all 300ms ease-in-out"
+                  _hover={{
+                    transform: transformHoverText,
+                    // cursor: "pointer",
+                  }}
+                >
+                  <Link to="Interior">
+                    <Text mx="0.5vw" color="#fff59b">
+                      {restaurant[lang]}
+                    </Text>
+                  </Link>
+                </Center>
+                <Center
+                  transition="all 300ms ease-in-out"
+                  _hover={{
+                    transform: transformHoverText,
+                    // cursor: "pointer",
+                  }}
+                >
+                  <Link to="About Us">
+                    <Text mx="0.5vw" color="lightgreen">
+                      ⚽{liveSports[lang]}
+                    </Text>
+                  </Link>
+                </Center>
               </HStack>
             </HStack>
           </Center>

@@ -52,6 +52,13 @@ const NavBar = ({ selectedItemNav, handleClickNav }: Props) => {
     lg: "lg",
   });
 
+  const transformHover = useBreakpointValue({
+    base: "scale(1.05 , 1.05)",
+    // sm: "scale(1.05 , 1.05)",
+    // md: "scale(1.05 , 1.05)",
+    // lg: "scale(1.05 , 1.05)",
+  });
+
   const boxShadowHover =
     "0px 0px 1px 1px rgba(255, 206, 127, 0.5) inset, 0px 0px 5px 3px rgb(255, 206, 127)";
   const boxShadow =
@@ -73,7 +80,15 @@ const NavBar = ({ selectedItemNav, handleClickNav }: Props) => {
     >
       <OrangeOverlayBox />
       <Center h="7vw" w="20vw" />
-      <Center zIndex={zIndexNavBar}>
+      <Center
+        zIndex={zIndexNavBar}
+        transition="all 300ms ease-in-out"
+        _hover={{
+          transform: transformHover,
+          opacity: "90%",
+          cursor: "pointer",
+        }}
+      >
         <Link to="Home">
           <Image src={logo} w="10vw" mt="0.5vw" mb="1vw" />
         </Link>
@@ -103,6 +118,7 @@ const NavBar = ({ selectedItemNav, handleClickNav }: Props) => {
                 onClick={() => {
                   handleClickNav(item);
                 }}
+                transform="scale(1.0 , 1.0)"
                 transition="all 300ms ease-in-out"
                 _focus={{ boxShadow: "outline" }}
                 _hover={{
@@ -111,6 +127,7 @@ const NavBar = ({ selectedItemNav, handleClickNav }: Props) => {
                   opacity: "90%",
                   cursor: "pointer",
                   boxShadow: boxShadowHover,
+                  transform: transformHover,
                 }}
               >
                 {lang === "En" ? item : navBarItemsPt[index]}
