@@ -41,7 +41,7 @@ const Address = () => {
       )}
 
       {isMiddleScreen && (
-        <>
+        <VStack>
           <HStack>
             <Icon as={MdLocationOn} transform={"scale(1.5 , 1.5)"} />
             <Text px="0.4vw">{address[lang]}</Text>
@@ -50,7 +50,7 @@ const Address = () => {
             Avenida dos Descobrimentos, Bellavista Comercial, 8200 - Albufeira,
             Portugal
           </Text>
-        </>
+        </VStack>
       )}
 
       {isSmallScreen && (
